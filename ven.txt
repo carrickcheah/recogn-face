@@ -1,0 +1,66 @@
+1. Create a Virtual Environment
+Run the following command to create a virtual environment named env:
+
+python -m venv env
+
+2. Activate the Virtual Environment
+On Windows:
+source env/Scripts/activate
+
+
+
+3. Install Dependencies
+Use pip to install the required packages in the virtual environment. For example:
+
+pip install numpy pandas
+
+
+
+4. Save Dependencies
+Export the installed packages to a requirements.txt file for reproducibility:
+
+pip freeze > requirements.txt
+
+
+5. Use the Environment in the Future
+Activate the Environment:
+Each time you work on the project, activate the virtual environment first:
+
+env\Scripts\activate  # Windows
+
+
+
+
+Install Dependencies from requirements.txt:
+If you're sharing the project or setting it up on a new machine, install dependencies like this:
+
+pip install -r requirements.txt
+
+
+6. Deactivate the Environment
+When you're done working, deactivate the virtual environment:
+
+deactivate
+
+
+
+
+GPT recommend but no testyet.
+
+Recommendation for Your Case
+Since you're using a venv and already have a requirements.txt:
+
+Stick with pip and venv: Use requirements.txt for dependency installation:
+
+pip install -r requirements.txt
+Switch to Poetry Later (Optional): If you decide you want the advanced features of Poetry (e.g., dependency management or publishing packages), you can transition by:
+
+Initializing Poetry:
+poetry init
+Converting requirements.txt to pyproject.toml with:
+poetry add $(cat requirements.txt | xargs)
+
+pip install --upgrade pip
+
+
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
