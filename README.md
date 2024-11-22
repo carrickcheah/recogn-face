@@ -1,9 +1,10 @@
 # Facial Expression Recognition with PyTorch
 
+![recognition](./image/recognition.jpg)  
+
 ## Overview
 
-This project focuses on recognizing facial expressions using PyTorch, leveraging the power of deep learning. It uses a pre-trained EfficientNet model,  
-fine-tuned to classify images into seven emotion categories. The project demonstrates how transfer learning and data augmentation can enhance the accuracy and robustness of facial expression recognition systems.  
+This project focuses on recognizing facial expressions using PyTorch, leveraging the power of deep learning. It uses a pre-trained EfficientNet model, fine-tuned to classify images into seven emotion categories. The project demonstrates how transfer learning and data augmentation can enhance the accuracy and robustness of facial expression recognition systems.  
 &nbsp;
 &nbsp;
 
@@ -30,8 +31,7 @@ The EfficientNet model, a state-of-the-art neural network, is fine-tuned for thi
 
 ## Training and Evaluation
 
-The training process includes a loop that computes loss and accuracy for each batch, ensuring consistent feedback during model optimization.  
-The validation phase evaluates performance on unseen data, and the model with the best validation accuracy is saved for future use. Metrics like accuracy and loss are logged during each epoch for analysis.  
+The training process includes a loop that computes loss and accuracy for each batch, ensuring consistent feedback during model optimization. The validation phase evaluates performance on unseen data, and the model with the best validation accuracy is saved for future use. Metrics like accuracy and loss are logged during each epoch for analysis.  
 &nbsp;
 &nbsp;
 
