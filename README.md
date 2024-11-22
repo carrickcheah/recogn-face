@@ -1,6 +1,6 @@
 # Facial Expression Recognition with PyTorch
 
-![recognition](./image/recognition.jpg)  
+![recognition](./images/recognition.jpg)  
 
 ## Overview
 
